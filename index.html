@@ -6,7 +6,25 @@
     <link rel="stylesheet" href="./styles.css">
     <title>Will Andy Pick Me?</title>
   </head>
-  <body>
-
+  <body class="andy-whole-page">
+    <header class="page-heading">Will Andy Pick Me?</header>
+    <div class="main-page">
+      <div class="eightball-box">
+        <form class="entry-form">
+          <input type="text" onfocus="this.value = ''" class="input-field" value="Ask your question here!">
+          <button type="submit" class="get-answer-button">Get your answer</button>
+        </form>
+        <div>
+          <p id="returnQuestion"></p>
+        </div>
+        <div class="returnAnswer"></div>
+        <img class="magic-ball" src="./assets/eight-ball.png">
+        <button class="clear-button">Clear</button>
+      </div>
+      <div class="woody-box">
+        <img class="woody" src="./assets/woody.png">
+      </div>
+    </div>
+    <script src="./index.js"></script>
   </body>
 </html>
